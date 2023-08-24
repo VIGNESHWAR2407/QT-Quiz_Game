@@ -16,6 +16,9 @@ public:
     explicit catergory(QWidget *parent = nullptr);
     ~catergory();
 
+private slots:
+    void on_apti_btn_clicked();
+
 private:
     Ui::catergory *ui;
 };

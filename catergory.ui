@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>485</width>
-    <height>395</height>
+    <width>512</width>
+    <height>505</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,15 +16,67 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>90</x>
      <y>60</y>
-     <width>211</width>
-     <height>231</height>
+     <width>331</width>
+     <height>371</height>
     </rect>
    </property>
    <property name="title">
     <string>Choose caterory</string>
    </property>
+   <widget class="QPushButton" name="apti_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>50</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aptitude</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="verbal_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>130</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Verbal</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tech_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>200</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Technical Skills</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="core_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>270</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Core</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

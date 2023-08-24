@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_proceed_clicked()
 {
-    hide();
+//    hide();
     login = new loginpage(this);
     login->show();
 }

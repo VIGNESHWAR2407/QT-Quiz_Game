@@ -2,6 +2,8 @@
 #include "ui_loginpage.h"
 #include "catergory.h"
 #include "loginpage.h"
+#include "apt_category.h"
+#include "admin_homepage.h"
 
 #include<QMessageBox>
 
@@ -12,7 +14,7 @@ loginpage::loginpage(QWidget *parent) :
     ui->setupUi(this);
 
     QSqlDatabase login = QSqlDatabase::addDatabase("QSQLITE");
-    login.setDatabaseName("C:/Users/hp/Documents/Qt...Qml/bithacks/sql_db.db");
+    login.setDatabaseName("C:/Users/hp/Documents/Qt...Qml/bithacks/QT-Quiz_Game/sql_db.db");
 
 
     if(!login.open())
@@ -48,16 +50,22 @@ void loginpage::on_login_btn_clicked()
         if(count==1)
         {
             ui->db_label->setText("Email and ID is correct");
-            hide();
+//            hide();
             catergory *cater;
             cater =new catergory(this);
             cater->show();
         }
-        else if(count>1)
-            ui->db_label->setText("Email and ID is duplicated");
         else if(count<1)
             ui->db_label->setText("Email and ID is incorrect");
 
+
+    }
+    if(email=="adminthecreator" && id=="admin")
+    {
+        hide();
+        Admin_homepage *adminentry;
+        adminentry = new Admin_homepage(this);
+        adminentry->show();
     }
 
 

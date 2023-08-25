@@ -11,7 +11,7 @@ Adminedit_apt::Adminedit_apt(QWidget *parent) :
 {
     ui->setupUi(this);
     QSqlDatabase qn_drop=QSqlDatabase::addDatabase("QSQLITE");
-    qn_drop.setDatabaseName("C:/Users/hp/Documents/Qt...Qml/bithacks/QT-Quiz_Game/qn_drop.db");
+    qn_drop.setDatabaseName("C:/Users/hp/Desktop/QT-Quiz_Game/qn_drop.db");
 
     if(!qn_drop.open())
      ui->qn_db_status->setText("Not found");
@@ -35,12 +35,12 @@ void Adminedit_apt::on_submitbtn_clicked()
     QString choice_3 =ui->choice_3->text();
     QString choice_4 =ui->choice_4->text();
 
-    QSqlDatabase qn_drop;
-    if(!qn_drop.isOpen())
-        qDebug()<<"DB is connceted is failed";
+//    QSqlDatabase qn_drop;
+//    if(!qn_drop.isOpen())
+//        qDebug()<<"DB is connceted is failed";
 
     QSqlQuery qry_qn;
-    qry_qn.prepare("insert into question_apt_easy[(qn_editor,qn_number,choice_1,choice_2,choice_3,choice_4)]values ('"+qn_editor+"','"+qn_number+"','"+choice_1+"','"+choice_2+"','"+choice_3+"','"+choice_4+"')");
+    qry_qn.prepare("insert into question_apt_easy(qn,qn_no,choice_1,choice_2,choice_3,choice_4)values ('"+qn_editor+"','"+qn_number+"','"+choice_1+"','"+choice_2+"','"+choice_3+"','"+choice_4+"')");
     if(qry_qn.exec())
     {
         QMessageBox::information(this,"Data Stored","Question Dropped");
@@ -49,4 +49,7 @@ void Adminedit_apt::on_submitbtn_clicked()
        QMessageBox::information(this,"Data Stored","Question Drop Unsuccessful");
 
 }
-
+void Adminedit_apt::on_quit_clicked()
+{
+    QApplication::quit();
+}

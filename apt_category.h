@@ -1,6 +1,5 @@
 #ifndef APT_CATEGORY_H
 #define APT_CATEGORY_H
-
 #include <QDialog>
 #include <QTimer>
 #include <QDebug>

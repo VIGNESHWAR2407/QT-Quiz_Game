@@ -5,7 +5,8 @@
 #include <QMessageBox>
 #include <QtSql>
 #include <QSqlDatabase>
-
+#include <QDebug>
+#include <QFileInfo>
 namespace Ui {
 class Admin_homepage;
 }

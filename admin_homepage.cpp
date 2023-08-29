@@ -15,7 +15,7 @@ Admin_homepage::Admin_homepage(QWidget *parent) :
 {
     ui->setupUi(this);
     QSqlDatabase qn_drop=QSqlDatabase::addDatabase("QSQLITE");
-    qn_drop.setDatabaseName("C:/Users/hp/Documents/Qt...Qml/bithacks/QT-Quiz_Game/qn_drop.db");
+    qn_drop.setDatabaseName("C:/Users/Karishhaju/OneDrive/Desktop/qt/QT-Quiz_Game/QT-Quiz_Game-main/qn_drop.db");
 
 }
 

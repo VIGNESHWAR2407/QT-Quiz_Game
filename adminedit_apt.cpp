@@ -34,16 +34,24 @@ void Adminedit_apt::on_submitbtn_clicked()
     QString choice_2 =ui->choice_2->text();
     QString choice_3 =ui->choice_3->text();
     QString choice_4 =ui->choice_4->text();
+    QString crt_choice=ui->comboBox->currentText();
 
 //    QSqlDatabase qn_drop;
 //    if(!qn_drop.isOpen())
 //        qDebug()<<"DB is connceted is failed";
 
     QSqlQuery qry_qn;
-    qry_qn.prepare("insert into question_apt_easy(qn,qn_no,choice_1,choice_2,choice_3,choice_4)values ('"+qn_editor+"','"+qn_number+"','"+choice_1+"','"+choice_2+"','"+choice_3+"','"+choice_4+"')");
+    qry_qn.prepare("insert into question_apt_easy(qn,qn_no,choice_1,choice_2,choice_3,choice_4,crt_choice)values ('"+qn_editor+"','"+qn_number+"','"+choice_1+"','"+choice_2+"','"+choice_3+"','"+choice_4+"','"+crt_choice+"')");
     if(qry_qn.exec())
     {
         QMessageBox::information(this,"Data Stored","Question Dropped");
+        ui->qn_number->clear();
+        ui->qn_editor->clear();
+        ui->choice_1->clear();
+        ui->choice_2->clear();
+        ui->choice_3->clear();
+        ui->choice_4->clear();
+
     }
     else
        QMessageBox::information(this,"Data Stored","Question Drop Unsuccessful");
@@ -53,3 +61,7 @@ void Adminedit_apt::on_quit_clicked()
 {
     QApplication::quit();
 }
+
+
+
+

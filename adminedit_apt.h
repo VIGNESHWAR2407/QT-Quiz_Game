@@ -18,7 +18,6 @@ public:
 private slots:
     void on_submitbtn_clicked();
     void on_quit_clicked();
-
 private:
     Ui::Adminedit_apt *ui;
 };

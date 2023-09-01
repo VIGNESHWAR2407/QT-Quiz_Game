@@ -15,6 +15,11 @@ public:
     explicit Adminedit_technical(QWidget *parent = nullptr);
     ~Adminedit_technical();
 
+private slots:
+    void on_submitbtn_clicked();
+
+    void on_quit_clicked();
+
 private:
     Ui::Adminedit_technical *ui;
 };

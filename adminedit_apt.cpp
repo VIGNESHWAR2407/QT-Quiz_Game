@@ -11,7 +11,7 @@ Adminedit_apt::Adminedit_apt(QWidget *parent) :
 {
     ui->setupUi(this);
     QSqlDatabase qn_drop=QSqlDatabase::addDatabase("QSQLITE");
-    qn_drop.setDatabaseName("C:/Users/hp/Desktop/QT-Quiz_Game/qn_drop.db");
+    qn_drop.setDatabaseName("C:/Users/Karishhaju/OneDrive/Desktop/QT-Quiz_Game-main (2)/QT-Quiz_Game-main/qn_drop.db");
 
     if(!qn_drop.open())
      ui->qn_db_status->setText("Not found");

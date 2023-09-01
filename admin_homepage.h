@@ -28,7 +28,6 @@ private slots:
 
     void on_core_btn_clicked();
 
-    void on_adminedit_rb_easy_clicked();
 
 private:
     Ui::Admin_homepage *ui;

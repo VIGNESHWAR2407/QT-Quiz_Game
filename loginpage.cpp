@@ -4,9 +4,7 @@
 #include "loginpage.h"
 #include "apt_category.h"
 #include "admin_homepage.h"
-
 #include<QMessageBox>
-
 loginpage::loginpage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::loginpage)
@@ -14,9 +12,13 @@ loginpage::loginpage(QWidget *parent) :
     ui->setupUi(this);
 
     QSqlDatabase login = QSqlDatabase::addDatabase("QSQLITE");
+<<<<<<< HEAD
     login.setDatabaseName("C:/Users/Karishhaju/OneDrive/Desktop/QT-Quiz_Game-main (2)/QT-Quiz_Game-main/sql_db.db");
 
 
+=======
+    login.setDatabaseName("C:/Users/Karishhaju/OneDrive/Desktop/qt/QT-Quiz_Game/QT-Quiz_Game-main/sql_db.db");
+>>>>>>> 25f0b628cd13990f9a1f0c82105a79c4880cbd1c
     if(!login.open())
      ui->status_label->setText("Not found");
     else

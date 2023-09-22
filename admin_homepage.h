@@ -5,7 +5,8 @@
 #include <QMessageBox>
 #include <QtSql>
 #include <QSqlDatabase>
-
+#include <QDebug>
+#include <QFileInfo>
 namespace Ui {
 class Admin_homepage;
 }
@@ -28,7 +29,6 @@ private slots:
 
     void on_core_btn_clicked();
 
-    void on_adminedit_rb_easy_clicked();
 
 private:
     Ui::Admin_homepage *ui;

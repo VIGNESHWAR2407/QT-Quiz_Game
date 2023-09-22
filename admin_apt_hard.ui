@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Adminedit_technical</class>
- <widget class="QDialog" name="Adminedit_technical">
+ <class>admin_apt_hard</class>
+ <widget class="QDialog" name="admin_apt_hard">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>776</width>
-    <height>685</height>
+    <width>978</width>
+    <height>686</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="choice_box">
+  <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
      <x>90</x>
+     <y>620</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DB Status :</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="choice_box">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
      <y>210</y>
      <width>621</width>
      <height>371</height>
@@ -161,23 +174,36 @@
     </widget>
    </widget>
   </widget>
-  <widget class="QLabel" name="qn_db_status">
+  <widget class="QPushButton" name="submitbtn">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>620</y>
-     <width>91</width>
-     <height>21</height>
+     <x>430</x>
+     <y>610</y>
+     <width>151</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>--</string>
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quit">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>610</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quit</string>
    </property>
   </widget>
   <widget class="QGroupBox" name="qn_box">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>120</x>
      <y>70</y>
      <width>621</width>
      <height>131</height>
@@ -233,43 +259,17 @@
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="submitbtn">
+  <widget class="QLabel" name="qn_db_status">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>610</y>
-     <width>151</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Submit</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
+     <x>160</x>
      <y>620</y>
      <width>91</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>DB Status :</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="quit">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>610</y>
-     <width>151</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Quit</string>
+    <string>--</string>
    </property>
   </widget>
  </widget>
